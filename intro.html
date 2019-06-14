@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>myGame</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <div id="overlay">
+      <div class="text">
+        game over !!!
+        <button id="restart_overlay" clas="btn">Start The Game</button>
+      </div>
+    </div>
+    <button id="restart">Start The Game</button>
+    <header id="header_main">
+      <div class="time" id="remainTime">
+        <p>Your remain Time is :</p>
+        <div id="chrno">00</div>
+        <p>/ 20 seconds</p>
+      </div>
+      <div class="finalResult" id="myColor">
+        <span>Your Score: </span><span id="scoring"></span>
+      </div>
+    </header>
+
+    <br />
+    <div class="contenant">
+      <div class="rect" id="rect1">Elem1</div>
+      <div class="rect" id="rect2">Elem2</div>
+      <div class="rect" id="rect3">Elem3</div>
+      <div class="rect" id="rect4">Elem4</div>
+    </div>
+
+    <div class="ff">
+      <label for="lettreName">Please order Letters </label>
+      <input
+        id="lettreName"
+        type="text"
+        placeholde="upper case letter"
+        value=" "
+      />
+      <!--<button id="submit_result" class="Chekresult">Validation</button>-->
+    </div>
+    <br />
+
+    <hr />
+
+    <!-- <canvas id="example" width="300" height="300"></canvas> -->
+  </body>
+</html>
