@@ -25,6 +25,12 @@ body {
   transition: opacity 1s linear;
   opacity: 0;
 }
+.containerEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 #overlay.is-active {
   opacity: 1;

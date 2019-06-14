@@ -13,6 +13,7 @@ function start() {
   startTheGameOverlay.addEventListener("click", restartGame);
   var userInput = document.getElementById("lettreName");
   var valRandom = setEnigme();
+  var weClick = document.getElementById("clickToStart");
 
   console.log(valRandom);
   userInput.addEventListener("keydown", function(event) {
@@ -40,12 +41,6 @@ function start() {
     }
   });
 }
-//   function myFunction() {
-//     document.onkeypress.which = 13;
-//   }
-// }
-
-// Button to start Chreno and game
 
 function winOrLose() {
   if (gameScore > 5 && count < 20) {
@@ -133,7 +128,7 @@ function chrono() {
     chr.innerHTML = count;
     if (count === 20) {
       clearInterval(intervalId);
-      if (gameScore > 3) {
+      if (gameScore > 2) {
         winSound();
       } else {
         setOverlayStatus("gameover");
@@ -144,6 +139,13 @@ function chrono() {
     // stop the interval
   }, 1000);
 }
+
+//   function myFunction() {
+//     document.onkeypress.which = 13;
+//   }
+// }
+
+// Button to start Chreno and game
 
 // function initChrono() {
 //   var count = 0;
